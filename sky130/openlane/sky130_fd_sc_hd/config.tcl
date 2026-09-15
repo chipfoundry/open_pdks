@@ -47,7 +47,7 @@ set ::env(CELL_CLK_PORT) CLK
 set ::env(PL_LIB) $::env(LIB_TYPICAL)
 
 # Fillcell insertion
-set ::env(FILL_CELL) "sky130_fd_sc_hd__fill*"
+set ::env(FILL_CELL) "sky130_ef_sc_hd__fill_12 sky130_ef_sc_hd__fill_8 sky130_ef_sc_hd__fill_4 sky130_fd_sc_hd__fill_2 sky130_fd_sc_hd__fill_1"
 set ::env(DECAP_CELL) "sky130_ef_sc_hd__decap_40_12"
 set ::env(RE_BUFFER_CELL) "sky130_fd_sc_hd__buf_4"
 
@@ -58,7 +58,7 @@ set ::env(DIODE_CELL_PIN) "DIODE"
 
 set ::env(GPL_CELL_PADDING) {0}
 set ::env(DPL_CELL_PADDING) {0}
-set ::env(CELL_PAD_EXCLUDE) "sky130_fd_sc_hd__tap* sky130_fd_sc_hd__decap* sky130_ef_sc_hd__decap* sky130_fd_sc_hd__fill*"
+set ::env(CELL_PAD_EXCLUDE) "sky130_fd_sc_hd__tap* sky130_fd_sc_hd__decap* sky130_ef_sc_hd__decap* sky130_fd_sc_hd__fill* sky130_ef_sc_hd__fill*"
 
 # Clk Buffers info CTS data
 set ::env(ROOT_CLK_BUFFER) sky130_fd_sc_hd__clkbuf_16
